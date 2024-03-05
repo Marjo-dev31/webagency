@@ -1,55 +1,67 @@
-html {
+
+body {
+    /* margin: auto; */
+    color: rgb(36, 36, 36);
+    font-family: 'Roboto' , sans-serif;
+    /* font-size: 1rem; */
+    /* margin: 0 100px; */
     max-width: 100%;
 }
 
-body {
-    margin: auto;
-    color: rgb(36, 36, 36);
-    font-family: 'Roboto' , sans-serif;
-    font-size: 1rem;
+a {
+    text-decoration: none;
+    color: rgb(159, 159, 159);
+
+}
+
+header {
+    /* max-width: 100% */
 }
 
 .navbar {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    margin: 0 100px;
+    justify-content: space-around;
+    /* max-width: 100%; */
+    /* margin: 0 200px; */
 }
 
-a {
-    text-decoration: none;
+.navbar a {
     padding: 1.5rem;
-    color: rgb(159, 159, 159);
 }
 
-.hero {
-    margin: 0 50px;
-    /* height: 500px; */
-    position: relative;
-}
-
-.text-hero {
-    position: absolute;
-    top: 150px;
-    z-index: 2;
-    color: white;
-    width: 50%;
-    padding: 3rem;
-    align-content: center;
-}
 
 .slider {
-    position: absolute;
-    top: 50px;
-    z-index: 1;
+    position: relative;
+    top: 0;
+    /* z-index: 1; */
+    padding: 1rem 0;
+    display: flex;
+    justify-content: center;
+    min-height: 300px;
+    
 }
 
-img {
-    width: 100%;
+.text-slider {
+    position: absolute;
+    top: 50%;
+    /* left: 50%; */
+    /* z-index: 2; */
+    color: white;
+    width: 25%;
+    align-content: center;
+    font-weight: bold;
+    transform: translate(-50%,-50%);
+   
+}
+
+.slider img {
+    /* max-width: 100%; */
+    object-fit: fill;
 }
 
 h1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
 }
 
 #name {
@@ -60,6 +72,71 @@ button {
     color: white;
     background-color: rgb(87, 163, 197);
     padding: 0.5rem;
-    border-radius: 5rem;
+    border-radius: 0.5rem;
     border: 0;
 }
+
+.services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1000px;
+    margin: 50px auto;
+    max-width: 100%;
+}
+
+.services h2 {
+    margin: 0;
+}
+
+.services-p {
+    text-align: center;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+li {
+    display: flex;
+    flex-direction: row;
+    padding: 0.5rem 0;
+}
+
+ul p {
+    margin: 0;
+}
+
+ul img {
+    padding: 0%0.5rem;
+}
+
+.projets {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px auto;
+    width: 1000px;
+}
+
+.projets p {
+    text-align: center;
+}
+
+.btn-projets {
+    background-color: rgb(227, 236, 240);
+    padding: 1rem;
+    border-radius: 0.2rem;
+}
+
+.projets a {
+    padding-inline: 1rem;
+}
+
