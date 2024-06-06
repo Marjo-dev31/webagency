@@ -22,8 +22,12 @@ body {
     padding: 1.5rem;
 }
 
-.burger-icon span {
+.burger-icon {
     display: none;
+}
+
+.burger-icon span {
+    display: block;
     width: 35px;
     height: 5px;
     background-color: black;
@@ -287,7 +291,7 @@ footer img {
         display: none;
     }
     
-    .burger-icon span {
+    .burger-icon {
         display: block;
         
     }
